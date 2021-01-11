@@ -1,0 +1,122 @@
+﻿<Window x:Class="Lamborghini_App.Huracán"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lamborghini_App"
+        mc:Ignorable="d"
+        Title="Huracán" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None">
+
+    <Canvas Height="1080" Width="1920">
+
+        <Canvas.Background>
+            <ImageBrush ImageSource="Resources\Black Background.jpg" Stretch="None" AlignmentX="Center" AlignmentY="Center"></ImageBrush>
+        </Canvas.Background>
+
+        <TextBox Height="106" Canvas.Left="1380" TextWrapping="Wrap" Text="" Canvas.Top="34" Width="530" x:Name="TotalHuracán" Loaded="TotalHuracán_Loaded" Background="Transparent" FontFamily="Love Nature" FontSize="40" Foreground="White" BorderThickness="0" HorizontalAlignment="Left"/>
+
+        <UniformGrid>
+            <Label Content="Customize your car" FontFamily="Love Nature" FontSize="50" Margin="70,20,0,0" Foreground="White" FontStyle="Italic"/>
+        </UniformGrid>
+
+        <UniformGrid Width="1338" HorizontalAlignment="Right" VerticalAlignment="Bottom" Rows="1" Height="672" Canvas.Left="582" Canvas.Top="210">
+            <Image x:Name="HuracánPicture" Source="Resources\HuracanEVORWDSPYDERWhite.png" Stretch="Uniform" Height="732" Margin="0,0,0,-60"/>
+        </UniformGrid>
+
+        <UniformGrid Width="994" HorizontalAlignment="Right" Height="138" Canvas.Left="852" Canvas.Top="887" Rows="1" >
+
+            <Button Content="" BorderThickness="0" Height="102" Width="225" x:Name="HuracánWhite" Click="HuracánWhite_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="C:\Users\Krisz\Desktop\Lamborghini Customization\Lamborghini App\Resources\White Color.svg.png"  Stretch="Uniform"></ImageBrush>
+                </Button.Background>
+            </Button>
+
+            <Button Content="" BorderThickness="0" Height="102" Width="225" x:Name="HuracánYellow" Click="HuracánYellow_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources\YellowColor.png"  Stretch="Uniform"></ImageBrush>
+                </Button.Background>
+            </Button>
+
+            <Button Content="" BorderThickness="0" Height="102" Width="225" x:Name="HuracánBlue" Click="HuracánBlue_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources\BlueColor.png"  Stretch="Uniform"></ImageBrush>
+                </Button.Background>
+            </Button>
+
+            <Button Content="" BorderThickness="0" Height="102" Width="225" x:Name="HuracánBlack" Click="HuracánBlack_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources\BlackColor.png"  Stretch="Uniform"></ImageBrush>
+                </Button.Background>
+            </Button>
+
+        </UniformGrid>
+
+        <UniformGrid Height="361" Width="684" Canvas.Left="50" Canvas.Top="210" Rows="2" >
+
+            <RadioButton Margin="0,15,0,15" Style="{StaticResource StyleButton}" Content="Resources/Tires/Tire1.png" IsChecked="True" x:Name="Tire1RadioButton" Checked="Tire1RadioButton_Checked">
+
+            </RadioButton>
+
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 990</TextBlock>
+
+            <RadioButton Margin="0,15,0,15" Style="{StaticResource StyleButton}" Content="Resources/Tires/Tire2.png" x:Name="Tire2RadioButton" Checked="Tire2RadioButton_Checked">
+
+            </RadioButton>
+
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 850</TextBlock>
+
+            <RadioButton Margin="0,15,0,15" Style="{StaticResource StyleButton}" Content="Resources/Tires/Tire3.png" x:Name="Tire3RadioButton" Checked="Tire3RadioButton_Checked">
+
+            </RadioButton>
+
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 690</TextBlock>
+
+            <RadioButton Margin="0,15,0,15" Style="{StaticResource StyleButton}" Content="Resources/Tires/Tire4.png" x:Name="Tire4RadioButton" Checked="Tire4RadioButton_Checked">
+
+            </RadioButton>
+
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 580</TextBlock>
+
+        </UniformGrid>
+
+        <UniformGrid Rows="1" Columns="4" Canvas.Left="930" Canvas.Top="242" Width="888" Height="178">
+
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center">$ 229,428</TextBlock>
+
+            <RadioButton Margin="40,10,0,10" Style="{StaticResource StyleButton}" Content="Resources/Gas Can.png" IsChecked="True" x:Name="Gascar" Checked="Gascar_Checked">
+
+            </RadioButton>
+
+            <RadioButton Margin="40,10,0,10" Style="{StaticResource StyleButton}" Content="Resources/Electricity.png" x:Name="ElcerticCar" Checked="ElcerticCar_Checked">
+
+            </RadioButton>
+
+
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center">$ 340,260</TextBlock>
+
+
+        </UniformGrid>
+
+        <UniformGrid Height="410" Width="711" Canvas.Left="50" Canvas.Top="615">
+            <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" IsChecked="True" Content="resources/WhiteLeather.png" x:Name="WhiteLeatherRadioButton" Checked="WhiteLeatherRadioButton_Checked">
+            </RadioButton>
+
+            <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" Content="Resources/BlueLeather.png" x:Name="BlueLeatherRadioButton" Checked="BlueLeatherRadioButton_Checked">
+            </RadioButton>
+
+            <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" Content="Resources/RedLeather.png" x:Name="RedLeatherRadioButton" Checked="RedLeatherRadioButton_Checked">
+            </RadioButton>
+
+            <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" Content="Resources/BlackLeather.png" x:Name="BlackLeatherRadioButton" Checked="BlackLeatherRadioButton_Checked">
+            </RadioButton>
+        </UniformGrid>
+
+        <UniformGrid Height="410" Width="711" Canvas.Left="50" Canvas.Top="615" Rows="2" Columns="2">
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False">$ 290</TextBlock>
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False">$ 420</TextBlock>
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False">$ 399</TextBlock>
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False">$ 990</TextBlock>
+        </UniformGrid>
+
+    </Canvas>
+</Window>
