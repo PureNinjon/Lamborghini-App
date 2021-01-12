@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:Lamborghini_App"
         mc:Ignorable="d"
          Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None" ResizeMode="NoResize">
-    <WrapPanel Orientation="Vertical" Height="1080" Width="1920">
+    <Canvas Height="1080" Width="1920" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-        <WrapPanel.Background>
+        <Canvas.Background>
             <VisualBrush Stretch="None">
                 <VisualBrush.Visual>
                     <MediaElement HorizontalAlignment="Center" VerticalAlignment="Center" Width="2500" Height="2000" Volume="0">
@@ -17,8 +17,7 @@
                                 <EventTrigger.Actions>
                                     <BeginStoryboard>
                                         <Storyboard>
-                                            <MediaTimeline Source="Resources\Lambo - B-Roll Challenge_Trim.mp4"/>
-
+                                            <MediaTimeline Source="Resources\Media\Lambo - B-Roll Challenge_Trim.mp4"/>
                                         </Storyboard>
                                     </BeginStoryboard>
                                 </EventTrigger.Actions>
@@ -27,22 +26,31 @@
                     </MediaElement>
                 </VisualBrush.Visual>
             </VisualBrush>
-        </WrapPanel.Background>
+        </Canvas.Background>
 
-        <UniformGrid HorizontalAlignment="Center" VerticalAlignment="Center" Height="105" Width="1920" >
-            <Label FontFamily="Love Nature" FontSize="50" HorizontalAlignment="Center" Content="Lamborghini Customization" UseLayoutRounding="False" Foreground="White" Margin="20" Height="67" />
-        </UniformGrid>
-
-        <UniformGrid HorizontalAlignment="Center"  Margin="0,800,0,0" VerticalAlignment="Center" Height="145" >
-            <Button Content="Start" FontFamily="Love Nature" Width="400" BorderThickness="0" FontSize="30" x:Name="start" Click="start_Click" Margin="0,10,0,37">
+        <UniformGrid Height="60" Width="60" Canvas.Left="1850" Canvas.Top="10">
+            <Button Height="50" Width="50" FontSize="40" Click="ButtonX_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="Resources\HexaButton.png" Stretch="UniformToFill"/>
+                    <ImageBrush ImageSource="Resources/ButtonIcons/ButtonX.png" Stretch="Uniform" Opacity="50"></ImageBrush>
                 </Button.Background>
             </Button>
         </UniformGrid>
+        
+        <UniformGrid HorizontalAlignment="Center" VerticalAlignment="Center" Height="105" Width="750" Canvas.Left="585" Canvas.Top="0">
+            <Label FontFamily="Love Nature" FontSize="50" HorizontalAlignment="Center" Content="Lamborghini Customization" UseLayoutRounding="False" Foreground="White" Margin="20" Height="67" />
+        </UniformGrid>
+
+        <UniformGrid HorizontalAlignment="Center" VerticalAlignment="Center" Height="145" Canvas.Left="760" Canvas.Top="925">
+            <Button Content="Start" FontFamily="Love Nature" Width="400" BorderThickness="0" FontSize="30" x:Name="start" Click="start_Click" Margin="0,10,0,37">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/ButtonIcons/HexaButton.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+        </UniformGrid>
+        
 
 
 
-    </WrapPanel>
+    </Canvas>
 
 </Window>

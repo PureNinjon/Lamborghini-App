@@ -6,49 +6,70 @@
         xmlns:local="clr-namespace:Lamborghini_App"
         mc:Ignorable="d"
         Title="Selection" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None">
-    
-    <WrapPanel Height="1080" Width="1920" Orientation="Horizontal">
-        <WrapPanel.Background>
+
+    <Canvas Height="1080" Width="1920">
+
+        <Canvas.Background>
             <ImageBrush ImageSource="Resources\Black Background.jpg" Stretch="None" AlignmentX="Center" AlignmentY="Center"></ImageBrush>
-        </WrapPanel.Background>
+        </Canvas.Background>
 
-        <WrapPanel ItemWidth="1920">
+        <UniformGrid Canvas.Left="10" Canvas.Top="-10" >
             <Label Content="Select your car" FontFamily="Love Nature" FontSize="50" Margin="70,20,0,0" Foreground="White" FontStyle="Italic"/>
-        </WrapPanel>
-        
-        <WrapPanel ItemWidth="640" Orientation="Vertical">
-            
-            <Label Content="Huracan" FontFamily="Love Nature" FontSize="40" Foreground="White"  HorizontalAlignment="Center" Margin="0,250,0,0"/>
-            
-            <Button  Height="400" Click="Huracán_Button_Click" >
+        </UniformGrid>
+
+        <UniformGrid Height="60" Width="60" Canvas.Left="10" Canvas.Top="10">
+            <Button Height="50" Width="50" Click="ButtonBack_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="Resources\HuracanEVORWDSPYDERWhite.png" Stretch="Uniform"/>
+                    <ImageBrush ImageSource="Resources/ButtonIcons/ButtonBack.png">
+                    </ImageBrush>
                 </Button.Background>
             </Button>
-        </WrapPanel>
+        </UniformGrid>
 
-        <WrapPanel ItemWidth="640" Orientation="Vertical">
-
-            <Label Content="Aventador" FontFamily="Love Nature" FontSize="40" Foreground="White"  HorizontalAlignment="Center" Margin="0,250,0,0"/>
-
-            <Button  Height="400">
+        <UniformGrid Height="60" Width="60" Canvas.Left="1850" Canvas.Top="10">
+            <Button Height="50" Width="50" FontSize="40" Click="ButtonX_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="Resources\AventadorSVJWhite.png" Stretch="Uniform"/>
+                    <ImageBrush ImageSource="Resources/ButtonIcons/ButtonX.png" Stretch="Uniform" Opacity="50"></ImageBrush>
                 </Button.Background>
             </Button>
-        </WrapPanel>
+        </UniformGrid>
 
-        <WrapPanel ItemWidth="640" Orientation="Vertical">
+        <UniformGrid Canvas.Left="645" Canvas.Top="354" Height="70" Width="640">
+            <Label Content="Aventador" FontFamily="Love Nature" FontSize="40" Foreground="White"  HorizontalAlignment="Center"/>
+        </UniformGrid>
 
-            <Label Content="Urus" FontFamily="Love Nature" FontSize="40" Foreground="White"  HorizontalAlignment="Center" Margin="0,250,0,0"/>
+        <UniformGrid Canvas.Top="354" Height="70" Width="640">
+            <Label Content="Huracan" FontFamily="Love Nature" FontSize="40" Foreground="White"  HorizontalAlignment="Center"/>
+        </UniformGrid>
 
-            <Button  Height="400">
+        <UniformGrid Canvas.Left="1280" Canvas.Top="354" Height="70" Width="640">
+            <Label Content="Urus" FontFamily="Love Nature" FontSize="40" Foreground="White"  HorizontalAlignment="Center"/>
+        </UniformGrid>
+
+        <UniformGrid Canvas.Top="424" Width="640" Canvas.Left="-75">
+            <Button  Height="418" Click="Huracán_Button_Click" Width="640">
                 <Button.Background>
-                    <ImageBrush ImageSource="Resources\UrusWhite.png" Stretch="Uniform"/>
+                    <ImageBrush ImageSource="Resources\CarColors/HuracanEVORWDSPYDERWhite.png" Stretch="UniformToFill" AlignmentX="Center"/>
                 </Button.Background>
             </Button>
-        </WrapPanel>
+        </UniformGrid>
 
-    </WrapPanel>
+        <UniformGrid Canvas.Top="424" Width="662" Canvas.Left="547">
+            <Button  Height="418" Click="Aventador_Button_Click" Margin="11,0,-19,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources\CarColors/AventadorSVJWhite.png" Stretch="UniformToFill" AlignmentX="Center"/>
+                </Button.Background>
+            </Button>
+        </UniformGrid>
+
+        <UniformGrid Canvas.Top="429" Width="731" Canvas.Left="1179">
+            <Button  Height="418" Click="Urus_Button_Click" Margin="46,0,10,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources\CarColors/UrusWhite.png" Stretch="UniformToFill" AlignmentX="Center"/>
+                </Button.Background>
+            </Button>
+        </UniformGrid>
+
+    </Canvas>
 
 </Window>

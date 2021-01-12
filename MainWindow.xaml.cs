@@ -34,11 +34,16 @@ namespace Lamborghini_App
         {
             MediaPlayer LamboEngineStart = new MediaPlayer();
 
-            LamboEngineStart.Open(new Uri("Resources\\LamboEngineStart.mp3", UriKind.Relative));
+            LamboEngineStart.Open(new Uri("Resources\\Media\\LamboEngineStart.mp3", UriKind.Relative));
             LamboEngineStart.Play();
 
             Selection selection = new Selection();
             selection.Show();
+        }
+
+        private void ButtonX_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.Shutdown();
         }
     }
 }

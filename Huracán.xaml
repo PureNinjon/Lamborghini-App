@@ -15,37 +15,62 @@
 
         <TextBox Height="106" Canvas.Left="1380" TextWrapping="Wrap" Text="" Canvas.Top="34" Width="530" x:Name="TotalHuracán" Loaded="TotalHuracán_Loaded" Background="Transparent" FontFamily="Love Nature" FontSize="40" Foreground="White" BorderThickness="0" HorizontalAlignment="Left"/>
 
-        <UniformGrid>
-            <Label Content="Customize your car" FontFamily="Love Nature" FontSize="50" Margin="70,20,0,0" Foreground="White" FontStyle="Italic"/>
+        <UniformGrid Height="60" Width="60" Canvas.Left="10" Canvas.Top="10">
+            <Button Height="50" Width="50" Click="ButtonBack_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/ButtonIcons/ButtonBack.png">
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+        </UniformGrid>
+
+        <UniformGrid Height="60" Width="60" Canvas.Left="1850" Canvas.Top="10">
+            <Button Height="50" Width="50" FontSize="40" Click="ButtonX_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/ButtonIcons/ButtonX.png" Stretch="Uniform" Opacity="50"></ImageBrush>
+                </Button.Background>
+            </Button>
+        </UniformGrid>
+
+        <UniformGrid HorizontalAlignment="Center" VerticalAlignment="Center" Height="145" Canvas.Left="760" Canvas.Top="-12">
+            <Button Content="finalization" FontFamily="Love Nature" Width="400" BorderThickness="0" FontSize="30" Foreground="White" Click="Finalization_Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/ButtonIcons/HexaButton.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+        </UniformGrid>
+
+        <UniformGrid Canvas.Left="128" Width="522">
+            <Label Content="Customize your car" FontFamily="Love Nature" FontSize="50" Margin="0,20,0,0" Foreground="White" FontStyle="Italic" HorizontalAlignment="Left" Width="517"/>
         </UniformGrid>
 
         <UniformGrid Width="1338" HorizontalAlignment="Right" VerticalAlignment="Bottom" Rows="1" Height="672" Canvas.Left="582" Canvas.Top="210">
-            <Image x:Name="HuracánPicture" Source="Resources\HuracanEVORWDSPYDERWhite.png" Stretch="Uniform" Height="732" Margin="0,0,0,-60"/>
+            <Image x:Name="HuracánPicture" Source="Resources\CarColors/HuracanEVORWDSPYDERWhite.png" Stretch="Uniform" Height="732" Margin="0,0,0,-60"/>
         </UniformGrid>
 
         <UniformGrid Width="994" HorizontalAlignment="Right" Height="138" Canvas.Left="852" Canvas.Top="887" Rows="1" >
 
             <Button Content="" BorderThickness="0" Height="102" Width="225" x:Name="HuracánWhite" Click="HuracánWhite_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="C:\Users\Krisz\Desktop\Lamborghini Customization\Lamborghini App\Resources\White Color.svg.png"  Stretch="Uniform"></ImageBrush>
+                    <ImageBrush ImageSource="Resources/ButtonIcons/WhiteColor.png"  Stretch="Uniform"></ImageBrush>
                 </Button.Background>
             </Button>
 
             <Button Content="" BorderThickness="0" Height="102" Width="225" x:Name="HuracánYellow" Click="HuracánYellow_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="Resources\YellowColor.png"  Stretch="Uniform"></ImageBrush>
+                    <ImageBrush ImageSource="Resources\ButtonIcons/YellowColor.png"  Stretch="Uniform"></ImageBrush>
                 </Button.Background>
             </Button>
 
             <Button Content="" BorderThickness="0" Height="102" Width="225" x:Name="HuracánBlue" Click="HuracánBlue_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="Resources\BlueColor.png"  Stretch="Uniform"></ImageBrush>
+                    <ImageBrush ImageSource="Resources\ButtonIcons/BlueColor.png"  Stretch="Uniform"></ImageBrush>
                 </Button.Background>
             </Button>
 
             <Button Content="" BorderThickness="0" Height="102" Width="225" x:Name="HuracánBlack" Click="HuracánBlack_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="Resources\BlackColor.png"  Stretch="Uniform"></ImageBrush>
+                    <ImageBrush ImageSource="Resources\ButtonIcons/BlackColor.png"  Stretch="Uniform"></ImageBrush>
                 </Button.Background>
             </Button>
 
@@ -79,35 +104,33 @@
 
         </UniformGrid>
 
-        <UniformGrid Rows="1" Columns="4" Canvas.Left="930" Canvas.Top="242" Width="888" Height="178">
+        <UniformGrid Rows="1" Columns="4" Canvas.Left="930" Canvas.Top="211" Width="888" Height="178">
 
             <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center">$ 229,428</TextBlock>
 
-            <RadioButton Margin="40,10,0,10" Style="{StaticResource StyleButton}" Content="Resources/Gas Can.png" IsChecked="True" x:Name="Gascar" Checked="Gascar_Checked">
+            <RadioButton Margin="40,10,0,10" Style="{StaticResource StyleButton}" Content="Resources/Fuels/GasCan.png" IsChecked="True" x:Name="Gascar" Checked="Gascar_Checked">
 
             </RadioButton>
 
-            <RadioButton Margin="40,10,0,10" Style="{StaticResource StyleButton}" Content="Resources/Electricity.png" x:Name="ElcerticCar" Checked="ElcerticCar_Checked">
+            <RadioButton Margin="40,10,0,10" Style="{StaticResource StyleButton}" Content="Resources/Fuels/Electricity.png" x:Name="ElcerticCar" Checked="ElcerticCar_Checked">
 
             </RadioButton>
-
 
             <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center">$ 340,260</TextBlock>
-
 
         </UniformGrid>
 
         <UniformGrid Height="410" Width="711" Canvas.Left="50" Canvas.Top="615">
-            <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" IsChecked="True" Content="resources/WhiteLeather.png" x:Name="WhiteLeatherRadioButton" Checked="WhiteLeatherRadioButton_Checked">
+            <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" IsChecked="True" Content="Resources/Leathers/WhiteLeather.png" x:Name="WhiteLeatherRadioButton" Checked="WhiteLeatherRadioButton_Checked">
             </RadioButton>
 
-            <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" Content="Resources/BlueLeather.png" x:Name="BlueLeatherRadioButton" Checked="BlueLeatherRadioButton_Checked">
+            <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" Content="Resources/Leathers/BlueLeather.png" x:Name="BlueLeatherRadioButton" Checked="BlueLeatherRadioButton_Checked">
             </RadioButton>
 
-            <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" Content="Resources/RedLeather.png" x:Name="RedLeatherRadioButton" Checked="RedLeatherRadioButton_Checked">
+            <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" Content="Resources/Leathers/RedLeather.png" x:Name="RedLeatherRadioButton" Checked="RedLeatherRadioButton_Checked">
             </RadioButton>
 
-            <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" Content="Resources/BlackLeather.png" x:Name="BlackLeatherRadioButton" Checked="BlackLeatherRadioButton_Checked">
+            <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" Content="Resources/Leathers/BlackLeather.png" x:Name="BlackLeatherRadioButton" Checked="BlackLeatherRadioButton_Checked">
             </RadioButton>
         </UniformGrid>
 

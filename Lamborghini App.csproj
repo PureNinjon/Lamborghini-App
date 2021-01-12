@@ -55,12 +55,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Aventador.xaml.cs">
+      <DependentUpon>Aventador.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Huracán.xaml.cs">
       <DependentUpon>Huracán.xaml</DependentUpon>
     </Compile>
     <Compile Include="Selection.xaml.cs">
       <DependentUpon>Selection.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Summary.xaml.cs">
+      <DependentUpon>Summary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Urus.xaml.cs">
+      <DependentUpon>Urus.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Aventador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Huracán.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,6 +91,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Selection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Summary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Urus.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -104,7 +125,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Resources\RedLeather.psd" />
     <Resource Include="Resources\LoveNature-48z9.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -113,26 +133,50 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\HexaButton.png">
+    <Resource Include="Resources\ButtonIcons\HexaButton.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\LamboLogo.png">
+    <Resource Include="Resources\ButtonIcons\LamboLogo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\ClickSound.wav">
+    <Resource Include="Resources\ButtonIcons\ButtonBack.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\ButtonIcons\ButtonX.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CarColors\AventadorSVJGreen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CarColors\AventadorSVJRed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CarColors\AventadorSVJYellow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CarColors\UrusBlack.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CarColors\UrusRed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CarColors\UrusYellow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Resources\Media\ClickSound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\LamboEngineStart.mp3">
+    <Content Include="Resources\Media\LamboEngineStart.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\SoundForMouseOver.wav">
+    <Content Include="Resources\Media\SoundForMouseOver.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Resource Include="Resources\RedLeather.png" />
-    <Resource Include="Resources\WhiteLeather.png" />
-    <Resource Include="Resources\YellowColor.png" />
+    <Resource Include="Resources\Leathers\RedLeather.png" />
+    <Resource Include="Resources\Leathers\WhiteLeather.png" />
+    <Resource Include="Resources\ButtonIcons\YellowColor.png" />
     <Resource Include="Resources\Tires\Tire1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -145,34 +189,34 @@
     <Resource Include="Resources\Tires\Tire4.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\White Color.svg.png">
+    <Resource Include="Resources\ButtonIcons\WhiteColor.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\AventadorSVJWhite.png">
+    <Resource Include="Resources\CarColors\AventadorSVJWhite.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\HuracanEVORWDSPYDERWhite.png">
+    <Resource Include="Resources\CarColors\HuracanEVORWDSPYDERWhite.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\HuracanEVORWDSPYDERBlack.png">
+    <Resource Include="Resources\CarColors\HuracanEVORWDSPYDERBlack.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\HuracanEVORWDSPYDERBlue.png">
+    <Resource Include="Resources\CarColors\HuracanEVORWDSPYDERBlue.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\HuracanEVORWDSPYDERYellow.png">
+    <Resource Include="Resources\CarColors\HuracanEVORWDSPYDERYellow.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\Electricity.png" />
-    <Resource Include="Resources\Gas Can.png" />
-    <Resource Include="Resources\BlackColor.png" />
-    <Resource Include="Resources\BlueColor.png" />
-    <Resource Include="Resources\BlackLeather.png" />
-    <Resource Include="Resources\BlueLeather.png" />
-    <Content Include="Resources\Lambo - B-Roll Challenge_Trim.mp4">
+    <Resource Include="Resources\Fuels\Electricity.png" />
+    <Resource Include="Resources\Fuels\GasCan.png" />
+    <Resource Include="Resources\ButtonIcons\BlackColor.png" />
+    <Resource Include="Resources\ButtonIcons\BlueColor.png" />
+    <Resource Include="Resources\Leathers\BlackLeather.png" />
+    <Resource Include="Resources\Leathers\BlueLeather.png" />
+    <Content Include="Resources\Media\Lambo - B-Roll Challenge_Trim.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Resource Include="Resources\UrusWhite.png">
+    <Resource Include="Resources\CarColors\UrusWhite.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Black Background.jpg">

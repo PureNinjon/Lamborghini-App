@@ -26,15 +26,16 @@
                     <Setter Property="Opacity" Value="0.5"/>
                     <Setter Property="Cursor" Value="Hand"/>
                 </Trigger>
+
                 <EventTrigger RoutedEvent="MouseEnter">
                     <EventTrigger.Actions>
-                        <SoundPlayerAction Source="Resources\SoundForMouseOver.wav"></SoundPlayerAction>
+                        <SoundPlayerAction Source="Resources\Media\SoundForMouseOver.wav"></SoundPlayerAction>
                     </EventTrigger.Actions>
                 </EventTrigger>
 
                 <EventTrigger RoutedEvent="PreviewMouseDown">
                     <EventTrigger.Actions>
-                        <SoundPlayerAction Source="Resources\ClickSound.wav"></SoundPlayerAction>
+                        <SoundPlayerAction Source="Resources\Media\ClickSound.wav"></SoundPlayerAction>
                     </EventTrigger.Actions>
                 </EventTrigger>
 
@@ -64,13 +65,13 @@
 
                 <EventTrigger RoutedEvent="MouseEnter">
                     <EventTrigger.Actions>
-                        <SoundPlayerAction Source="Resources\SoundForMouseOver.wav"></SoundPlayerAction>
+                        <SoundPlayerAction Source="Resources\Media\SoundForMouseOver.wav"></SoundPlayerAction>
                     </EventTrigger.Actions>
                 </EventTrigger>
 
                 <EventTrigger RoutedEvent="PreviewMouseDown">
                     <EventTrigger.Actions>
-                        <SoundPlayerAction Source="Resources\ClickSound.wav"></SoundPlayerAction>
+                        <SoundPlayerAction Source="Resources\Media\ClickSound.wav"></SoundPlayerAction>
                     </EventTrigger.Actions>
                 </EventTrigger>
 

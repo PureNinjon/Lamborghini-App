@@ -45,21 +45,21 @@ namespace Lamborghini_App
         //Color Customization
         private void HuracánWhite_Click(object sender, RoutedEventArgs e)
         {
-            HuracánPicture.Source = new BitmapImage(new Uri(@"Resources/HuracanEVORWDSPYDERWhite.png", UriKind.Relative));
+            HuracánPicture.Source = new BitmapImage(new Uri(@"Resources/CarColors/HuracanEVORWDSPYDERWhite.png", UriKind.Relative));
         }
         private void HuracánYellow_Click(object sender, RoutedEventArgs e)
         {
-            HuracánPicture.Source = new BitmapImage(new Uri(@"Resources/HuracanEVORWDSPYDERYellow.png", UriKind.Relative));
+            HuracánPicture.Source = new BitmapImage(new Uri(@"Resources/CarColors/HuracanEVORWDSPYDERYellow.png", UriKind.Relative));
         }
 
         private void HuracánBlue_Click(object sender, RoutedEventArgs e)
         {
-            HuracánPicture.Source = new BitmapImage(new Uri(@"Resources/HuracanEVORWDSPYDERBlue.png", UriKind.Relative));
+            HuracánPicture.Source = new BitmapImage(new Uri(@"Resources/CarColors/HuracanEVORWDSPYDERBlue.png", UriKind.Relative));
         }
 
         private void HuracánBlack_Click(object sender, RoutedEventArgs e)
         {
-            HuracánPicture.Source = new BitmapImage(new Uri(@"Resources/HuracanEVORWDSPYDERBlack.png", UriKind.Relative));
+            HuracánPicture.Source = new BitmapImage(new Uri(@"Resources/CarColors/HuracanEVORWDSPYDERBlack.png", UriKind.Relative));
         }
 
         //Fuel Total Counter
@@ -130,6 +130,21 @@ namespace Lamborghini_App
         {
             leatherTotal = 990;
             SetTotal();
+        }
+        
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
+        {
+            Selection selection = new Selection();
+            selection.Show();
+        }
+        private void ButtonX_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.Shutdown();
+        }
+        private void Finalization_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Summary summary = new Summary();
+            summary.Show();
         }
     }
 }
