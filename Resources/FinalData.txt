@@ -1,0 +1,1 @@
+Resources\CarColors\AventadorSVJGreen.png;Resources/Fuels/Electricity.png;Resources/Tires/Tire2.png;Resources/Leathers/BlackLeather.png;Total: $ 342,000

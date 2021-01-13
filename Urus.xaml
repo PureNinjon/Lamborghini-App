@@ -24,7 +24,7 @@
         </UniformGrid>
 
         <UniformGrid Height="60" Width="60" Canvas.Left="1850" Canvas.Top="10">
-            <Button Height="50" Width="50" FontSize="40" Click="ButtonX_Click">
+            <Button Height="50" Width="50" FontSize="40" Click="ButtonX_Click" x:Name="ButtonX">
                 <Button.Background>
                     <ImageBrush ImageSource="Resources/ButtonIcons/ButtonX.png" Stretch="Uniform" Opacity="50"></ImageBrush>
                 </Button.Background>
@@ -81,48 +81,48 @@
 
             </RadioButton>
 
-            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 6969696</TextBlock>
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 233</TextBlock>
 
             <RadioButton Margin="0,15,0,15" Style="{StaticResource StyleButton}" Content="Resources/Tires/Tire2.png" x:Name="Tire2RadioButton" Checked="Tire2RadioButton_Checked">
 
             </RadioButton>
 
-            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 850</TextBlock>
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 749</TextBlock>
 
             <RadioButton Margin="0,15,0,15" Style="{StaticResource StyleButton}" Content="Resources/Tires/Tire3.png" x:Name="Tire3RadioButton" Checked="Tire3RadioButton_Checked">
 
             </RadioButton>
 
-            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 690</TextBlock>
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 666</TextBlock>
 
             <RadioButton Margin="0,15,0,15" Style="{StaticResource StyleButton}" Content="Resources/Tires/Tire4.png" x:Name="Tire4RadioButton" Checked="Tire4RadioButton_Checked">
 
             </RadioButton>
 
-            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 580</TextBlock>
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 577</TextBlock>
 
         </UniformGrid>
 
         <UniformGrid Rows="1" Columns="4" Canvas.Left="930" Canvas.Top="211" Width="888" Height="178">
 
-            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center">$ 229,428</TextBlock>
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center">$ 249,615</TextBlock>
 
-            <RadioButton Margin="40,10,0,10" Style="{StaticResource StyleButton}" Content="Resources/Fuels/GasCan.png" IsChecked="True" x:Name="Gascar" Checked="Gascar_Checked">
-
-            </RadioButton>
-
-            <RadioButton Margin="40,10,0,10" Style="{StaticResource StyleButton}" Content="Resources/Fuels/Electricity.png" x:Name="ElcerticCar" Checked="ElcerticCar_Checked">
+            <RadioButton Margin="40,10,0,10" Style="{StaticResource StyleButton}" Content="Resources/Fuels/GasCan.png" IsChecked="True" x:Name="GasCar" Checked="GasCar_Checked">
 
             </RadioButton>
 
+            <RadioButton Margin="40,10,0,10" Style="{StaticResource StyleButton}" Content="Resources/Fuels/Electricity.png" x:Name="ElectricCar" Checked="ElcerticCar_Checked">
 
-            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center">$ 340,260</TextBlock>
+            </RadioButton>
+
+
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center">$ 323,480</TextBlock>
 
 
         </UniformGrid>
 
         <UniformGrid Height="410" Width="711" Canvas.Left="50" Canvas.Top="615">
-            <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" IsChecked="True" Content="Resources/Leathers/WhiteLeather.png" x:Name="WhiteLeatherRadioButton" Checked="WhiteLeatherRadioButton_Checked">
+            <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" IsChecked="True" Content="Resources\Leathers\WhiteLeather.png" x:Name="WhiteLeatherRadioButton" Checked="WhiteLeatherRadioButton_Checked">
             </RadioButton>
 
             <RadioButton Margin="20" FontFamily="Love Nature" FontSize="40" Foreground="#313131" Style="{StaticResource StyleButton}" Content="Resources/Leathers/BlueLeather.png" x:Name="BlueLeatherRadioButton" Checked="BlueLeatherRadioButton_Checked">
@@ -136,10 +136,10 @@
         </UniformGrid>
 
         <UniformGrid Height="410" Width="711" Canvas.Left="50" Canvas.Top="615" Rows="2" Columns="2">
-            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False">$ 290</TextBlock>
-            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False">$ 420</TextBlock>
-            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False">$ 399</TextBlock>
-            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False">$ 990</TextBlock>
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False">$ 222</TextBlock>
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False">$ 421</TextBlock>
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False">$ 499</TextBlock>
+            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False">$ 999</TextBlock>
         </UniformGrid>
 
     </Canvas>

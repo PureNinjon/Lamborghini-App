@@ -5,16 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lamborghini_App"
         mc:Ignorable="d"
-        Title="Summary" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None">         
+        Title="Summary" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None">
     <Canvas Height="1080" Width="1920">
 
         <Canvas.Background>
             <ImageBrush ImageSource="Resources\Black Background.jpg" Stretch="None" AlignmentX="Center" AlignmentY="Center"></ImageBrush>
         </Canvas.Background>
 
-        <UniformGrid>
-            <Image x:Name="SelectedCar"></Image>
+
+        <UniformGrid Height="60" Width="60" Canvas.Left="10" Canvas.Top="10">
+            <Button Height="50" Width="50" Click="ButtonBack_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/ButtonIcons/ButtonBack.png">
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
         </UniformGrid>
-        
+
+        <UniformGrid Height="60" Width="60" Canvas.Left="1850" Canvas.Top="10">
+            <Button Height="50" Width="50" FontSize="40" Click="ButtonX_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/ButtonIcons/ButtonX.png" Stretch="Uniform" Opacity="50"></ImageBrush>
+                </Button.Background>
+            </Button>
+        </UniformGrid>
+
+        <UniformGrid Canvas.Left="426" Canvas.Top="102">
+            <Image x:Name="FinalCarData" Width="1484" Height="817" Source="C:\Users\Krisz\Desktop\Lamborghini Customization\Lamborghini App\Resources\CarColors\AventadorSVJWhite.png" Stretch="Uniform"/>
+        </UniformGrid>
+
+        <UniformGrid Canvas.Top="240">
+            <Image x:Name="FinalFuelData" Width="200" Height="200" Stretch="Uniform" Source="C:\Users\Krisz\Desktop\Lamborghini Customization\Lamborghini App\Resources\Fuels\GasCan.png"></Image>
+        </UniformGrid>
+
+        <UniformGrid Canvas.Top="445">
+            <Image x:Name="FinalTireData" Width="200" Height="200" Source="C:\Users\Krisz\Desktop\Lamborghini Customization\Lamborghini App\Resources\Tires\Tire1.png"></Image>
+        </UniformGrid>
+
+        <UniformGrid Canvas.Top="650">
+            <Image x:Name="FinalLeatherData" Width="178" Height="178" Stretch="None" Source="C:\Users\Krisz\Desktop\Lamborghini Customization\Lamborghini App\Resources\Leathers\WhiteLeather.png" Margin="30"></Image>
+        </UniformGrid>
+
+        <UniformGrid Canvas.Left="99" Canvas.Top="-11">
+            <Label Content="Here's Your Car" FontFamily="Love Nature" FontSize="50" Margin="0,20,0,0" Foreground="White" FontStyle="Italic" HorizontalAlignment="Left" Width="517"/>
+        </UniformGrid>
+
+        <TextBox x:Name="FinalPrice" Height="106" Canvas.Left="34" TextWrapping="Wrap" Text="" Canvas.Top="924" Width="530" Background="Transparent" FontFamily="Love Nature" FontSize="40" Foreground="White" BorderThickness="0" HorizontalAlignment="Left"/>
+
+        <Label Content="Fuel" Canvas.Left="205" Canvas.Top="314" FontFamily="Love Nature" FontSize="50" Foreground="White" FontStyle="Italic" HorizontalAlignment="Left"/>
+        <Label Content="Tire" Canvas.Left="205" Canvas.Top="506" FontFamily="Love Nature" FontSize="50" Foreground="White" FontStyle="Italic" HorizontalAlignment="Left"/>
+        <Label Content="Leather" Canvas.Left="243" Canvas.Top="738" FontFamily="Love Nature" FontSize="50" Foreground="White" FontStyle="Italic" HorizontalAlignment="Left"/>
+
     </Canvas>
 </Window>

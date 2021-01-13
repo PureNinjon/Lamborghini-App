@@ -165,6 +165,9 @@
     <Resource Include="Resources\CarColors\UrusYellow.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\FinalData.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Content Include="Resources\Media\ClickSound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
