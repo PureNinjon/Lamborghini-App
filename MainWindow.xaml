@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lamborghini_App"
         mc:Ignorable="d"
-         Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None" ResizeMode="NoResize">
+        Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None" ResizeMode="NoResize">
+    <Window.Resources>
+        <FontFamily x:Key="FontLoveNature">/Resources/#Love Nature</FontFamily>
+    </Window.Resources>
     <Canvas Height="1080" Width="1920" HorizontalAlignment="Center" VerticalAlignment="Center">
 
         <Canvas.Background>
@@ -37,11 +40,11 @@
         </UniformGrid>
         
         <UniformGrid HorizontalAlignment="Center" VerticalAlignment="Center" Height="105" Width="750" Canvas.Left="585" Canvas.Top="0">
-            <Label FontFamily="Love Nature" FontSize="50" HorizontalAlignment="Center" Content="Lamborghini Customization" UseLayoutRounding="False" Foreground="White" Margin="20" Height="67" />
+            <Label FontFamily="{StaticResource FontLoveNature}" FontSize="50" HorizontalAlignment="Center" Content="Lamborghini Customization" UseLayoutRounding="False" Foreground="White" Margin="20" Height="67" />
         </UniformGrid>
 
         <UniformGrid HorizontalAlignment="Center" VerticalAlignment="Center" Height="145" Canvas.Left="760" Canvas.Top="925">
-            <Button Content="Start" FontFamily="Love Nature" Width="400" BorderThickness="0" FontSize="30" x:Name="start" Click="start_Click" Margin="0,10,0,37">
+            <Button Content="Start" FontFamily="{StaticResource FontLoveNature}" Width="400" BorderThickness="0" FontSize="30" x:Name="start" Click="start_Click" Margin="0,10,0,37">
                 <Button.Background>
                     <ImageBrush ImageSource="Resources/ButtonIcons/HexaButton.png" Stretch="UniformToFill"/>
                 </Button.Background>

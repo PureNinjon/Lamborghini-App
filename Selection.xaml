@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:Lamborghini_App"
         mc:Ignorable="d"
         Title="Selection" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None">
+    <Window.Resources>
+        <FontFamily x:Key="FontLoveNature">/Resources/#Love Nature</FontFamily>
+    </Window.Resources>
 
     <Canvas Height="1080" Width="1920">
 
@@ -14,7 +17,7 @@
         </Canvas.Background>
 
         <UniformGrid Canvas.Left="10" Canvas.Top="-10" >
-            <Label Content="Select your car" FontFamily="Love Nature" FontSize="50" Margin="70,20,0,0" Foreground="White" FontStyle="Italic"/>
+            <Label Content="Select your car" FontFamily="{StaticResource FontLoveNature}" FontSize="50" Margin="70,20,0,0" Foreground="White" FontStyle="Italic"/>
         </UniformGrid>
 
         <UniformGrid Height="60" Width="60" Canvas.Left="10" Canvas.Top="10">
@@ -35,15 +38,15 @@
         </UniformGrid>
 
         <UniformGrid Canvas.Left="645" Canvas.Top="354" Height="70" Width="640">
-            <Label Content="Aventador" FontFamily="Love Nature" FontSize="40" Foreground="White"  HorizontalAlignment="Center"/>
+            <Label Content="Aventador" FontFamily="{StaticResource FontLoveNature}" FontSize="40" Foreground="White"  HorizontalAlignment="Center"/>
         </UniformGrid>
 
         <UniformGrid Canvas.Top="354" Height="70" Width="640">
-            <Label Content="Huracan" FontFamily="Love Nature" FontSize="40" Foreground="White"  HorizontalAlignment="Center"/>
+            <Label Content="Huracan" FontFamily="{StaticResource FontLoveNature}" FontSize="40" Foreground="White"  HorizontalAlignment="Center"/>
         </UniformGrid>
 
         <UniformGrid Canvas.Left="1280" Canvas.Top="354" Height="70" Width="640">
-            <Label Content="Urus" FontFamily="Love Nature" FontSize="40" Foreground="White"  HorizontalAlignment="Center"/>
+            <Label Content="Urus" FontFamily="{StaticResource FontLoveNature}" FontSize="40" Foreground="White"  HorizontalAlignment="Center"/>
         </UniformGrid>
 
         <UniformGrid Canvas.Top="424" Width="640" Canvas.Left="-75">

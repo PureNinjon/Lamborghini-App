@@ -6,14 +6,17 @@
         xmlns:local="clr-namespace:Lamborghini_App"
         mc:Ignorable="d"
         Title="Aventador" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None">
+    <Window.Resources>
+        <FontFamily x:Key="FontLoveNature">/Resources/#Love Nature</FontFamily>
+    </Window.Resources>
 
-    <Canvas Height="1080" Width="1920">
+        <Canvas Height="1080" Width="1920">
 
         <Canvas.Background>
             <ImageBrush ImageSource="Resources\Black Background.jpg" Stretch="None" AlignmentX="Center" AlignmentY="Center"></ImageBrush>
         </Canvas.Background>
 
-        <TextBox Height="106" Canvas.Left="1380" TextWrapping="Wrap" Text="" Canvas.Top="34" Width="530" x:Name="TotalAventador" Loaded="TotalAventador_Loaded" Background="Transparent" FontFamily="Love Nature" FontSize="40" Foreground="White" BorderThickness="0" HorizontalAlignment="Left"/>
+        <TextBox Height="106" Canvas.Left="1380" TextWrapping="Wrap" Text="" Canvas.Top="34" FontFamily="{StaticResource FontLoveNature}" Width="530" x:Name="TotalAventador" Loaded="TotalAventador_Loaded" Background="Transparent"  FontSize="40" Foreground="White" BorderThickness="0" HorizontalAlignment="Left"/>
 
         <UniformGrid Height="60" Width="60" Canvas.Left="10" Canvas.Top="10">
             <Button Height="50" Width="50" Click="ButtonBack_Click">
@@ -41,7 +44,7 @@
         </UniformGrid>
 
         <UniformGrid Canvas.Left="75" Width="522" Canvas.Top="-9">
-            <Label Content="Customize your car" FontFamily="Love Nature" FontSize="50" Margin="0,20,0,0" Foreground="White" FontStyle="Italic" HorizontalAlignment="Left" Width="517"/>
+            <Label Content="Customize your car" FontSize="50" Margin="0,20,0,0" FontFamily="{StaticResource FontLoveNature}" Foreground="White" FontStyle="Italic" HorizontalAlignment="Left" Width="517"/>
         </UniformGrid>
 
         <UniformGrid Width="1338" HorizontalAlignment="Right" VerticalAlignment="Bottom" Rows="1" Height="672" Canvas.Left="582" Canvas.Top="210">
@@ -64,13 +67,13 @@
 
             <Button Content="" BorderThickness="0" Height="102" Width="225" x:Name="AventadorBlue" Click="AventadorBlue_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="Resources\ButtonIcons\BlueColor.png"  Stretch="Uniform"></ImageBrush>
+                    <ImageBrush ImageSource="Resources\ButtonIcons\GreenColor.png"  Stretch="Uniform"></ImageBrush>
                 </Button.Background>
             </Button>
 
             <Button Content="" BorderThickness="0" Height="102" Width="225" x:Name="AventadorBlack" Click="AventadorBlack_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="Resources\ButtonIcons\BlackColor.png"  Stretch="Uniform"></ImageBrush>
+                    <ImageBrush ImageSource="Resources\ButtonIcons\RedColor.png"  Stretch="Uniform"></ImageBrush>
                 </Button.Background>
             </Button>
 
@@ -82,13 +85,13 @@
 
             </RadioButton>
 
-            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 6969696</TextBlock>
+            <TextBlock  FontSize="40" Foreground="White" HorizontalAlignment="Left" FontFamily="{StaticResource FontLoveNature}" VerticalAlignment="Center" Margin="10">$ 969</TextBlock>
 
             <RadioButton Margin="0,15,0,15" Style="{StaticResource StyleButton}" Content="Resources/Tires/Tire2.png" x:Name="Tire2RadioButton" Checked="Tire2RadioButton_Checked">
 
             </RadioButton>
 
-            <TextBlock FontFamily="Love Nature" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 850</TextBlock>
+            <TextBlock FontFamily="{StaticResource FontLoveNature}" FontSize="40" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">$ 850</TextBlock>
 
             <RadioButton Margin="0,15,0,15" Style="{StaticResource StyleButton}" Content="Resources/Tires/Tire3.png" x:Name="Tire3RadioButton" Checked="Tire3RadioButton_Checked">
 

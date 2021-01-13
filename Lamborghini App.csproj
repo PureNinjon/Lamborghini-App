@@ -168,6 +168,12 @@
     <Resource Include="Resources\FinalData.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\ButtonIcons\GreenColor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\ButtonIcons\RedColor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Content Include="Resources\Media\ClickSound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
