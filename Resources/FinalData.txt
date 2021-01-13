@@ -1,1 +1,1 @@
-Resources\CarColors\AventadorSVJGreen.png;Resources/Fuels/Electricity.png;Resources/Tires/Tire2.png;Resources/Leathers/BlackLeather.png;Total: $ 342,000
+Resources\CarColors\HuracanEVORWDSPYDERWhite.png;Resources/Fuels/GasCan.png;Resources/Tires/Tire1.png;Resources\Leathers\WhiteLeather.png;Total: $ 230,708

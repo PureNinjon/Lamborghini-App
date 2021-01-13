@@ -55,6 +55,11 @@
         <Label Content="Fuel" Canvas.Left="205" Canvas.Top="314" FontFamily="Love Nature" FontSize="50" Foreground="White" FontStyle="Italic" HorizontalAlignment="Left"/>
         <Label Content="Tire" Canvas.Left="205" Canvas.Top="506" FontFamily="Love Nature" FontSize="50" Foreground="White" FontStyle="Italic" HorizontalAlignment="Left"/>
         <Label Content="Leather" Canvas.Left="243" Canvas.Top="738" FontFamily="Love Nature" FontSize="50" Foreground="White" FontStyle="Italic" HorizontalAlignment="Left"/>
+        <Button Content="Buy" FontFamily="Love Nature" Width="400" BorderThickness="0" FontSize="30" x:Name="start" Canvas.Left="760" Canvas.Top="924" Height="106" Foreground="White">
+            <Button.Background>
+                <ImageBrush ImageSource="Resources/ButtonIcons/HexaButton.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
 
     </Canvas>
 </Window>

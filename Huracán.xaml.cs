@@ -34,7 +34,7 @@ namespace Lamborghini_App
             File.WriteAllLines(filepath, output);
         }
 
-        string CarData = @"Resources\CarColors\UrusWhite.png";
+        string CarData = @"Resources\CarColors\HuracanEVORWDSPYDERWhite.png";
         string FuelData;
         string TireData;
         string LeatherData = @"Resources\Leathers\WhiteLeather.png";

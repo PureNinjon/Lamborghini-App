@@ -43,7 +43,7 @@ namespace Lamborghini_App
         int leatherTotal = 0;
 
 
-        string CarData = @"Resources\CarColors\UrusWhite.png";
+        string CarData = @"Resources\CarColors\AventadorSVJWhite.png";
         string FuelData;
         string TireData;
         string LeatherData = @"Resources\Leathers\WhiteLeather.png";
