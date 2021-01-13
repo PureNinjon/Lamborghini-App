@@ -30,7 +30,7 @@ namespace Lamborghini_App
 
         public void ReadFinalData()
         {
-            string filepath = @"C:\Users\Krisz\Desktop\Lamborghini Customization\Lamborghini App\Resources\FinalData.txt";
+            string filepath = @"Resources\FinalData.txt";
 
             foreach (var i in File.ReadAllLines(filepath))
             {

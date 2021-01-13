@@ -30,7 +30,7 @@ namespace Lamborghini_App
             List<string> output = new List<string>();
             output.Add($"{CarData};{FuelData};{TireData};{LeatherData};{PriceData}");
 
-            string filepath = @"C:\Users\Krisz\Desktop\Lamborghini Customization\Lamborghini App\Resources\FinalData.txt";
+            string filepath = @"Resources\FinalData.txt";
             File.WriteAllLines(filepath, output);
         }
 

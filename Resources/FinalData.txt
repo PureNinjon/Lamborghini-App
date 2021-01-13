@@ -1,1 +1,1 @@
-Resources\CarColors\HuracanEVORWDSPYDERWhite.png;Resources/Fuels/GasCan.png;Resources/Tires/Tire1.png;Resources\Leathers\WhiteLeather.png;Total: $ 230,708
+Resources\CarColors\HuracanEVORWDSPYDERBlue.png;Resources/Fuels/Electricity.png;Resources/Tires/Tire4.png;Resources/Leathers/BlueLeather.png;Total: $ 341,160
